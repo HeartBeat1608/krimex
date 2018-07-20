@@ -1,5 +1,5 @@
 {
-  "name": "{{.AppName}}",
+  "name": "@clever/{{.AppName}}",
   "version": "0.0.1",
   "description": "{{.Description}}",
   "main": "dist/index.js",
