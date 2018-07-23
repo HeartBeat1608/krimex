@@ -2,7 +2,7 @@
   "name": "@clever/{{.AppName}}",
   "version": "0.0.1",
   "description": "{{.Description}}",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest"
