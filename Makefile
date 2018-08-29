@@ -8,13 +8,13 @@ all: test build
 
 lint:
 	@echo "Linting..."
-	@./node_modules/.bin/tslint $(TS_FILES)
-	@./node_modules/.bin/eslint -c .eslintrc.yml $(TS_FILES)
+	# @./node_modules/.bin/tslint $(TS_FILES)
+	# @./node_modules/.bin/eslint -c .eslintrc.yml $(TS_FILES)
 
 test: lint
 	@echo "Testing..."
-	@npm run --silent test
+	# @npm run --silent test
 
 build:
 	@echo "Building..."
-	@npm run --silent build
+	# @npm run --silent build
