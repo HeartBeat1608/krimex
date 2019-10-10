@@ -2,9 +2,9 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es6",
+        "strict": true,
         "noImplicitAny": false,
-        "jsx": "react",
-        "lib": ["es2017", "dom"],
+        "lib": ["es2017"],
         "typeRoots": [
             "node_modules/@types", "./types"
         ]
