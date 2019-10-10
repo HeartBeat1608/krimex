@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "{{.Description}}",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",  
   "scripts": {
     "build": "tsc --dist",
     "test": "jest"
@@ -30,8 +31,8 @@
     "eslint-config-airbnb": "^5.0.1",
     "eslint-plugin-react": "^3.16.1",
     "jest": "^18.1.0",
+    "prettier": "1.18.2",
     "ts-jest": "^18.0.3",
-    "tslint": "^3.15.1",
     "typescript": "^2.1.5"
   }
 }
