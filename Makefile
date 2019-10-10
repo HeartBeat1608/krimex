@@ -11,16 +11,16 @@ format:
 
 lint:
 	@echo "Linting..."
-	# @./node_modules/.bin/eslint -c .eslintrc.yml $(TS_FILES)
-	# @echo "Running prettier"
-	# @./node_modules/.bin/prettier -l $(TS_FILES) || \
-	# 	(echo "**** Prettier errors in the above files! Run 'make format' to fix! ****" && false)
+	@./node_modules/.bin/eslint -c .eslintrc.yml $(TS_FILES)
+	@echo "Running prettier"
+	@./node_modules/.bin/prettier -l $(TS_FILES) || \
+		(echo "**** Prettier errors in the above files! Run 'make format' to fix! ****" && false)
 
 test: lint
 	@echo "Testing..."
-	# node_modules/.bin/jest
+	node_modules/.bin/jest
 
 build:
 	@echo "Building..."
-	# @rm -rf dist
-	# @./node_modules/.bin/tsc --declaration
+	@rm -rf dist
+	@./node_modules/.bin/tsc --declaration
