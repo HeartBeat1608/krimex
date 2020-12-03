@@ -1,15 +1,13 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es6",
-        "strict": true,
-        "lib": ["es2017"],
-        "typeRoots": [
-            "node_modules/@types", "./types"
-        ],
-        "outDir": "./dist"
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["dom", "es2019"],
+    "module": "commonjs",
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es5",
+    "typeRoots": ["node_modules/@types", "types"]
+  },
+  "exclude": ["node_modules"]
 }

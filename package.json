@@ -8,32 +8,25 @@
     "build": "tsc --dist",
     "test": "jest"
   },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json",
-      "ts",
-      "tsx"
-    ],
-    "testRegex": "/__tests__/.+\\.ts$",
-    "transform": {
-      "^.+\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    }
-  },
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@clever/eslint-plugin": "^0.2.0",
     "@clever/prettier-config": "1.0.0",
-    "@types/jest": "^18.1.1",
-    "@types/node": "^12.12.24",
-    "babel-eslint": "^7.1.1",
-    "eslint": "3.14.1",
-    "eslint-config-airbnb": "^5.0.1",
-    "eslint-plugin-react": "^3.16.1",
-    "jest": "^18.1.0",
-    "prettier": "2.1.2",
-    "ts-jest": "^18.0.3",
-    "typescript": "^2.1.5"
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@types/jest": "^26.0.16",
+    "@types/node": "^12.12.67",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^26.6.3",
+    "prettier": "2.2.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2"
   }
 }

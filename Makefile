@@ -1,15 +1,17 @@
 include node.mk
-.PHONY: all test build format format-all format-check lint-es lint-fix lint
+
 SHELL := /bin/bash
 
-TS_FILES := $(shell find . -name "*.ts" -not -path "./node_modules/*")
+TS_FILES := $(shell find lib/ -name "*.ts" -o -name "*.tsx")
 FORMATTED_FILES := $(TS_FILES) # Add other file types as you see fit, e.g. JSON files, config files
 MODIFIED_FORMATTED_FILES := $(shell git diff --name-only master $(FORMATTED_FILES))
 
-PRETTIER := ./node_modules/.bin/prettier
 ESLINT := ./node_modules/.bin/eslint
+PRETTIER := ./node_modules/.bin/prettier
+JEST := ./node_modules/.bin/jest
+TSC := ./node_modules/.bin/tsc
 
-all: test build
+.PHONY: format format-all format-check lint-es lint-fix lint test-jest test build
 
 format:
 	@echo "Formatting modified files..."
@@ -29,17 +31,19 @@ lint-es:
 	@$(ESLINT) $(TS_FILES)
 
 lint-fix:
-	@echo "Running eslint --fix"
+	@echo "Running eslint --fix..."
 	@$(ESLINT) --fix $(TS_FILES) || \
 		(echo "\033[0;31mThe above errors require manual fixing.\033[0m" && true)
 
 lint: format-check lint-es
 
-test:
-	@echo "Testing..."
-	node_modules/.bin/jest
+test-jest:
+	@echo "Running jest..."
+	@IS_TEST=1 $(JEST) --passWithNoTests --maxWorkers=1
+
+test: test-jest
 
 build:
 	@echo "Building..."
-	@rm -rf dist
-	@./node_modules/.bin/tsc --declaration
+	@rm -rf ./dist/
+	@$(TSC) --declaration
