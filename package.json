@@ -8,19 +8,6 @@
     "build": "tsc --dist",
     "test": "jest"
   },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json",
-      "ts",
-      "tsx"
-    ],
-    "testRegex": "/__tests__/.+\\.ts$",
-    "transform": {
-      "^.+\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    }
-  },
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
