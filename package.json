@@ -27,7 +27,7 @@
     "@clever/eslint-plugin": "^0.2.0",
     "@clever/prettier-config": "1.0.0",
     "@types/jest": "^18.1.1",
-    "@types/node": "^12.12.24",
+    "@types/node": "^12.12.67",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.14.0",
@@ -38,6 +38,6 @@
     "jest": "^18.1.0",
     "prettier": "2.2.1",
     "ts-jest": "^18.0.3",
-    "typescript": "^2.1.5"
+    "typescript": "^4.1.2"
   }
 }
