@@ -39,7 +39,7 @@ lint: format-check lint-es
 
 test-jest:
 	@echo "Running jest..."
-	@IS_TEST=1 $(JEST) --passWithNoTests --maxWorkers=1
+	@IS_TEST=1 $(JEST) --passWithNoTests --maxWorkers=1 --verbose
 
 test: test-jest
 
