@@ -34,9 +34,9 @@ module.exports = {
     },
     ecmaVersion: 2019,
     sourceType: "module",
-    project: "./tsconfig.json",
+    // project: "./tsconfig.json",
   },
-  plugins: ["jsx-a11y", "react", "react-hooks", "@typescript-eslint", "@clever"],
+  plugins: ["jsx-a11y", "react", "react-hooks", "@typescript-eslint"],
   rules: {
     "max-len": [
       "error",
@@ -51,8 +51,6 @@ module.exports = {
     ],
     // Rely on @typescript-eslint/no-unused-vars instead
     "no-unused-vars": ["off"],
-    "@clever/no-app-listen-without-localhost": "error",
-    "@clever/no-send-status-error": "error",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/naming-convention": [

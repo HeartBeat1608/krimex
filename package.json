@@ -1,14 +1,12 @@
 {
-  "name": "@clever/{{.AppName}}",
-  "version": "0.0.1",
-  "description": "{{.Description}}",
+  "name": "@krimex/core",
+  "version": "0.1.0",
+  "description": "A Subscription Management Library that is database agnostic and is flexible around any kind of subscription model.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "",
+  "author": "Durgesh Pandey <durgeshp1608@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@clever/eslint-plugin": "^0.2.0",
-    "@clever/prettier-config": "1.0.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@types/jest": "^26.0.16",

@@ -1,1 +1,2 @@
-// Export your library here
+// Export library here
+export * from './storage'
