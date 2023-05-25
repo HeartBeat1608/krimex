@@ -1,2 +1,2 @@
 // Export library here
-export * from './storage'
+export * from './storage/base';
