@@ -1,5 +1,5 @@
 {
-  "name": "@krimex/core",
+  "name": "krimex",
   "version": "0.1.0",
   "description": "A Subscription Management Library that is database agnostic and is flexible around any kind of subscription model.",
   "main": "dist/index.js",
